@@ -10,12 +10,15 @@ public class AddressBook {
         buddyList.add(buddy);
     }
 
-    public void removeBuddy(BuddyInfo buddy) {
-        String name = buddy.getName();
-        buddyList.removeIf(i -> i.getName().equals(name));
+    public void removeBuddy(BuddyInfo buddyToBeRemoved) {
+        buddyList.removeIf(i -> i.equals(buddyToBeRemoved));
     }
 
     public static void main(String[] args) {
+        BuddyInfo tony = new BuddyInfo("Tony", "Carleton", "613");
+        AddressBook addressBook = new AddressBook();
+        addressBook.addBuddy(tony);
+        addressBook.removeBuddy(tony);
         System.out.println("Address Book");
     }
 }
