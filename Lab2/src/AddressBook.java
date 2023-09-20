@@ -1,6 +1,6 @@
-import java.util.ArrayList;
+import java.util.*;
 public class AddressBook {
-    private final ArrayList<BuddyInfo> buddyList;
+    private final List<BuddyInfo> buddyList;
 
     public AddressBook() {
         buddyList = new ArrayList<BuddyInfo>();
