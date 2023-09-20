@@ -14,4 +14,8 @@ public class AddressBook {
         String name = buddy.getName();
         buddyList.removeIf(i -> i.getName().equals(name));
     }
+
+    public static void main(String[] args) {
+        System.out.println("Address Book");
+    }
 }
