@@ -11,7 +11,7 @@ public class AddressBook {
     }
 
     public void removeBuddy(BuddyInfo buddyToBeRemoved) {
-        buddyList.removeIf(i -> i.equals(buddyToBeRemoved));
+        buddyList.remove(buddyToBeRemoved);
     }
 
     public static void main(String[] args) {
