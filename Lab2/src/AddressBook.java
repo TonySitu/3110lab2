@@ -14,6 +14,10 @@ public class AddressBook {
         buddyList.remove(buddyToBeRemoved);
     }
 
+    public int getAddressSize() {
+        return buddyList.size();
+    }
+
     public static void main(String[] args) {
         BuddyInfo tony = new BuddyInfo("Tony", "Carleton", "613");
         AddressBook addressBook = new AddressBook();
